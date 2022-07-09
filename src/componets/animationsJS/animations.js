@@ -173,7 +173,7 @@ range.addEventListener('input', (e) => {
 });
 console.log(range.value)
     //animation on scroll page in webpage
-    /*document.body.addEventListener('scrol',(e)=>{
+    /*document.body.addEventListener('scroll',(e)=>{
         animationFn.seek(animationFn.duration * (window.pageYOffset / 1000));
         })*/
     //callbacks and promise in anime_js
