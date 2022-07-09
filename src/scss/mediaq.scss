@@ -1,0 +1,35 @@
+//adaptive for different devices
+$breakPoint:( full:1080px, middel:820px, min:500px);
+@mixin b-b($bpoint) {
+    @media (max-width: map-get($breakPoint, $bpoint)) {
+        @content
+    }
+}
+
+body {
+    background-color: #fff;
+    @include b-b('full') {
+        // background-color: rgb(255, 233, 233);
+    }
+    @include b-b('middel') {
+        // background-color: rgb(233, 127, 127);
+    }
+    @include b-b('min') {
+        // background-color: rgb(186, 24, 201);
+    }
+}
+
+//example how to use
+//for dekstop devices
+// @include b-b('full') {
+//     some styles if we need
+// }
+//for tablets
+// @include b-b('middel') {
+//     some styles if we need
+// }
+//for phones
+// @include b-b('min') {
+//     some styles if we need
+// }
+// }

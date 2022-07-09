@@ -1,0 +1,232 @@
+@font-face {
+    font-family: RedHatMono;
+    font-display: swap;
+    src: url("../fonts/RedHatMono-Italic-VariableFont_wght.woff2") format("woff2"), url("../fonts/RedHatMono-Italic-VariableFont_wght.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: noto;
+    font-display: swap;
+    src: url("../fonts/noto-sans-display-condensed-extrabold-italic.woff2") format("woff2"), url("../fonts/noto-sans-display-condensed-extrabold-italic.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+* a {
+    color: #000000;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+}
+
+.nav {
+    position: relative;
+    width: 1328px;
+    height: 57px;
+    left: 1px;
+    top: 0px;
+    background: #CCFFF6;
+}
+
+@media (max-width: 820px) {
+    .nav {
+        width: 819px;
+        height: 57px;
+        left: 1px;
+        top: 0px;
+    }
+}
+
+.container {
+    position: absolute;
+    width: 1258px;
+    height: 40px;
+    margin: 10px 35px 10px 35px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+@media (max-width: 820px) {
+    .container {
+        width: 727px;
+        height: 40px;
+        left: 36px;
+        margin: 10px;
+    }
+}
+
+.container .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    left: 506px;
+    position: absolute;
+    top: 0px;
+}
+
+@media (max-width: 820px) {
+    .container .menu {
+        display: none;
+    }
+}
+
+.container li {
+    padding-top: 5px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.container li:first-child {
+    margin-right: 190px;
+}
+
+.container li:last-child {
+    margin-left: 190px;
+}
+
+.container .logo {
+    padding: 5px 25px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.hideNAvbar {
+    position: fixed;
+    background-color: #c7d4b9;
+    padding-top: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.hideNAvbar .hideMenu {
+    position: relative;
+    top: 154px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    align-items: center;
+}
+
+.hideNAvbar .cont {
+    width: 314px;
+}
+
+.main {
+    position: relative;
+    background-color: #ffffff;
+    transition: 0.5s;
+    width: 100%;
+    height: 1000px;
+}
+
+.show-menu {
+    transform: translate(40%);
+}
+
+.toggle_button {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    left: 718px;
+    padding: 15px 0px;
+    display: none;
+    fill: #000000;
+}
+
+@media (max-width: 820px) {
+    .toggle_button {
+        display: block;
+    }
+}
+
+@keyframes test {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(40px);
+    }
+}
+
+@keyframes test2 {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-40px);
+    }
+}
+
+.hoverEFF {
+    font-size: 20px;
+}
+
+.hoverEFF:hover {
+    color: #2c21ce;
+    transition: 0.3s;
+}
+
+.hoverEFF:hover::before {
+    content: "";
+    height: 1.5px;
+    width: 89px;
+    background-color: #2c21ce;
+    position: absolute;
+    margin-top: -7px;
+    margin-left: -20px;
+    animation-name: test;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.hoverEFF:hover::after {
+    content: "";
+    height: 1.5px;
+    width: 75px;
+    background-color: #2c21ce;
+    position: absolute;
+    margin-top: 27px;
+    margin-left: -50px;
+    animation-name: test2;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}

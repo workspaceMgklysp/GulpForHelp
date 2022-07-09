@@ -1,0 +1,390 @@
+@import "/node_modules/swiper/swiper-bundle.min.css";
+body {
+  overflow-x: hidden;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper {
+  left: 250px;
+  top: 100px;
+  height: 300px;
+  width: 831px;
+  position: absolute;
+  top: 100px;
+  padding-bottom: 50px;
+}
+.swiper .swiper-slide {
+  border-radius: 18px;
+}
+.swiper .swiper-slide:after {
+  content: " ";
+  position: absolute;
+  background: #7531E3;
+  border-radius: 18px 18px 0 0;
+  width: 232px;
+  height: 144px;
+  bottom: 50.85%;
+  top: 0%;
+}
+
+.h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7531E3;
+}
+
+.swiper-button-prev {
+  left: -2px;
+}
+
+.swiper-button-next {
+  left: 90px;
+}
+
+.ico {
+  border: 2px solid #FFFFFF;
+  filter: drop-shadow(0px 7px 4px rgba(117, 49, 227, 0.66));
+  border-radius: 140px;
+  width: 100px;
+  height: 100px;
+  z-index: 12;
+  top: 22.5%;
+  position: absolute;
+}
+
+.n1 {
+  width: 101px;
+  height: 101px;
+}
+
+.n2 {
+  width: 101px;
+  height: 101px;
+}
+
+.n3 {
+  width: 101px;
+  height: 101px;
+}
+
+.blockwithInf .title {
+  position: absolute;
+  left: 25.48%;
+  right: 0%;
+  top: 52.19%;
+  bottom: 25.75%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+}
+.blockwithInf p {
+  position: absolute;
+  left: 16%;
+  right: 0%;
+  top: 61.38%;
+  bottom: 19.23%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.starSystem {
+  position: absolute;
+  top: 230px;
+  display: flex;
+  align-items: center;
+}
+.buttons .buy {
+  margin-top: 7px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 17.91%;
+  right: 55.97%;
+  top: 86.79%;
+  bottom: 5.35%;
+  background: #7531E3;
+  border: 1px solid #FFFFFF;
+  border-radius: 17px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 30%;
+  height: 24px;
+  width: 63px;
+  text-align: center;
+  padding-top: 5px;
+}
+.buttons .buy:hover {
+  background: #7029e2af;
+}
+.buttons .arenda {
+  margin-top: 7px;
+  text-align: center;
+  padding-top: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 17.91%;
+  right: 55.97%;
+  top: 86.79%;
+  bottom: 5.35%;
+  height: 24px;
+  width: 63px;
+  background: #7531E3;
+  border: 1px solid #FFFFFF;
+  border-radius: 17px;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+}
+.buttons .arenda:hover {
+  background: #7029e2af;
+}
+
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  border-radius: 6px;
+  background: rgba(117, 49, 227, 0.48);
+}
+
+.swiper-pagination-bullet-active {
+  background: rgba(117, 49, 227, 0.88);
+}
+
+.social {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 7px;
+  left: -135px;
+  color: #fff;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.defolt {
+  text-align: center;
+  padding-top: 200px;
+  font-weight: 700;
+}
+
+.swiper_1 .swiper-slide {
+  width: 1280px;
+  height: 700px;
+  font-size: 18px;
+  background: linear-gradient(118.76deg, #c9c2c2 40.76%, rgba(255, 255, 255, 0) 129.41%);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper_1 .swiper-button-next,
+.swiper_1 .swiper-button-prev {
+  color: black;
+}
+.swiper_1 .swiper-button-next {
+  left: 1270px;
+  top: 900px;
+}
+.swiper_1 .swiper-button-prev {
+  left: 50px;
+  top: 900px;
+}
+
+.part_of_back {
+  position: absolute;
+  width: 547px;
+  height: 682px;
+  left: 85px;
+  top: 23px;
+  background: #D9D9D9;
+  border-radius: 32px;
+  z-index: -2;
+}
+
+.obj {
+  position: absolute;
+  width: 257px;
+  height: 247px;
+  left: 279px;
+  top: 262px;
+  background: #4A4A4A;
+}
+.obj p {
+  padding-top: 33%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffff;
+}
+
+.block_info {
+  position: absolute;
+  width: 826px;
+  height: 538px;
+  left: 434px;
+  top: 117px;
+  background: #8E8E8E;
+  border-radius: 20px;
+  z-index: -1;
+}
+.block_info .title {
+  position: absolute;
+  width: 100px;
+  height: 58px;
+  left: 161px;
+  top: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.block_info p {
+  position: absolute;
+  width: 294px;
+  height: 29px;
+  left: 68px;
+  top: 77px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.block_info .info {
+  position: absolute;
+  width: 289px;
+  height: 87px;
+  left: 150px;
+  top: 234px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.block_info hr {
+  position: absolute;
+  width: 133px;
+  height: 1px;
+  left: 510px;
+  top: 303px;
+  border: 1.5px solid #FFFFFF;
+  transform: rotate(-90deg);
+}
+.block_info .stata {
+  left: 542px;
+  top: 269px;
+}
+.block_info .buttonBLOCk .a0 {
+  position: absolute;
+  width: 153px;
+  height: 42px;
+  left: 129px;
+  top: 471px;
+  background: #D9D9D9;
+  border-radius: 21px;
+}
+.block_info .buttonBLOCk .a1 {
+  position: absolute;
+  width: 153px;
+  height: 42px;
+  left: 308px;
+  top: 471px;
+  background: #D9D9D9;
+  border-radius: 21px;
+}
+.block_info .buttonBLOCk button {
+  border-color: #ffffff00;
+}
+.block_info .buttonBLOCk button:hover {
+  background: #b3b3b3;
+  transition: 0.3s;
+}
+
+.Uniq {
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.swiper_2 .swiper-slide {
+  width: 382px;
+  height: 361px;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=swiper.css.map */

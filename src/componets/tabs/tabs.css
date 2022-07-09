@@ -1,0 +1,61 @@
+* {
+  list-style: none;
+}
+
+@keyframes Simp_Anim {
+  from {
+    top: 13%;
+  }
+  to {
+    top: 12%;
+  }
+}
+.tabs__content {
+  display: none;
+  width: 300px;
+  height: 199px;
+  background: rgba(166, 166, 166, 0.59);
+  border-radius: 6px;
+}
+
+.tabs__content--active {
+  animation: 0.6s linear Simp_Anim;
+  animation-fill-mode: forwards;
+  display: block;
+  position: absolute;
+  left: 51%;
+  top: 12%;
+  transform: translate(-50%);
+}
+.tabs__content--active .content__title {
+  left: 33%;
+  position: absolute;
+}
+
+.tabs__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs__list .tabs__btn {
+  margin: 12px;
+  width: 93px;
+  height: 39px;
+  background: #8DBAFD;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.tabs__list .tabs__btn--active {
+  width: 93px;
+  height: 39px;
+  background: #5C92E3;
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  transition: 0.5s ease-in;
+  transform: translateY(-10px);
+}
+
+/*# sourceMappingURL=tabs.css.map */

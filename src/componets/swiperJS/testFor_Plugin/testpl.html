@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        @import "/node_modules/swiper/swiper-bundle.min.css";
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        
+        .slide {
+            flex-shrink: 0;
+            width: 200px;
+            height: 200px;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            margin-right: 3%;
+            margin-bottom: 2.5%;
+        }
+        
+        .swiper-slide:nth-child(4n) {
+            margin-right: 0;
+        }
+        
+        .swiper {
+            overflow: hidden;
+            width: 500px;
+        }
+        
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 600px) {
+            .slide {
+                width: 90%;
+                margin: 0;
+            }
+            .swiper-wrapper {
+                flex-wrap: nowrap;
+            }
+        }
+    </style>
+    <!-- Slider main container -->
+    <div class="swiper" data-mobile="false">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="slide">slide</div>
+            <div class="slide">slide3</div>
+            <div class="slide">slide3</div>
+            <div class="slide">slid2</div>
+            <div class="slide">slide1</div>
+            <div class="slide">sl3ide</div>
+            <div class="slide">slide</div>
+            <div class="slide">33</div>
+            <div class="slide">slide</div>
+            <div class="slide">sli3ide</div>
+            <div class="slide">slide</div>
+
+
+        </div>
+    </div>
+    <script src="plugin-for-swiper.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

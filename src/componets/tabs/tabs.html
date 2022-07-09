@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tabs.css">
+</head>
+
+<body>
+    <div class="tabs">
+        <ul class="tabs__list">
+            <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="main">butt#1</button></li>
+            <li class="tabs__item"><button class="tabs__btn" data-tabs-path="archive">butt#2</button></li>
+            <li class="tabs__item"><button class="tabs__btn" data-tabs-path="settings">butt#3</button></li>
+        </ul>
+        <div class="tabs__content tabs__content--active" data-tabs-target="main">
+            <div class="content">
+                <h2 class="content__title">Content#1</h2>
+                <p class="content__descr"></p>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"> </span>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"></span>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tabs__content" data-tabs-target="archive">
+            <div class="content">
+                <h2 class="content__title">Content#2</h2>
+                <p class="content__descr"></p>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"></span>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"></span>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"> </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tabs__content" data-tabs-target="settings">
+            <div class="content">
+                <h2 class="content__title">Content#3</h2>
+                <p class="content__descr"></p>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"> </span>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"></span>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__link">
+                            <span class="content__text"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="tabs.js"></script>
+
+</body>
+
+</html>
